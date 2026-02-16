@@ -113,7 +113,7 @@ def pagar_conta():
 
 
 while True:
-    print("\n========== MENU TRUSTBANK ==========")
+    print("\n========== MENU TRUSTBANK =========")
     print("1 - Consultar Saldo/Extrato")
     print("2 - Realizar Saque")
     print("3 - Realizar Depósito")
