@@ -113,14 +113,14 @@ def pagar_conta():
 
 
 while True:
-    print("\n========== MENU TRUSTBANK =========")
+    print("\n========== MENU TRUSTBANK ========")
     print("1 - Consultar Saldo/Extrato")
     print("2 - Realizar Saque")
     print("3 - Realizar Depósito")
     print("4 - Pagar Boleto")
     print("5 - Ver Limites")
     print("6 - Sair")
-    print("====================================")
+    print("===================================")
     
     opcao = input("Escolha uma opção: ")
     
