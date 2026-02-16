@@ -1,6 +1,6 @@
 import os
 
-# --- FUNÇÕES DE UTILIDADE ---
+
 def limpar_tela():
     os.system('cls' if os.name == 'nt' else 'clear')
 
@@ -15,7 +15,7 @@ def obter_valor_positivo(mensagem):
         except ValueError:
             print("Erro: Digite apenas números (ex: 100.50).")
 
-# --- CONFIGURAÇÃO INICIAL ---
+
 limpar_tela()
 print("========================================")
 print("       BEM-VINDO AO TRUSTBANK           ")
@@ -32,7 +32,7 @@ while True:
         break
     print("Senha incorreta. Tente novamente.")
 
-# --- VARIÁVEIS DE ESTADO ---
+
 saldo = 0.0
 cheque_especial_total = 0.0
 valor_utilizado_do_cheque = 0.0
@@ -42,7 +42,7 @@ saldo += primeiro_deposito
 cheque_especial_total = 50.0 if primeiro_deposito <= 500 else primeiro_deposito / 2
 print(f"Conta aberta! Seu limite de cheque especial é: R$ {cheque_especial_total:.2f}")
 
-# --- FUNÇÕES DO SISTEMA ---
+
 def consultar_extrato():
     limite_disponivel = cheque_especial_total - valor_utilizado_do_cheque
     print("\n--- EXTRATO TRUSTBANK ---")
@@ -111,7 +111,7 @@ def pagar_conta():
     else:
         print("Saldo insuficiente para pagar este boleto.")
 
-# --- LOOP PRINCIPAL ---
+
 while True:
     print("\n========== MENU TRUSTBANK ==========")
     print("1 - Consultar Saldo/Extrato")
